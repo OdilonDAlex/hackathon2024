@@ -16,7 +16,7 @@ return new class extends Migration
     {
         Schema::create('reactions', function (Blueprint $table) {
             $table->id();
-            $table->string('type');
+            $table->string('type')->default('like');
             $table->foreignIdFor(User::class, 'authorId');
             $table->foreignIdFor(Comment::class, 'commentId')->nullable();
             $table->foreignIdFor(Subject::class, 'subjectId')->nullable();
