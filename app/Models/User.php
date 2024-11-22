@@ -56,4 +56,8 @@ class User extends Authenticatable
     public function subjects(): HasMany {
         return $this->hasMany(Subject::class, 'authorId');
     }
+
+    public function comments(): HasMany {
+        return $this->hasMany(Comment::class, 'authorId');
+    }
 }
