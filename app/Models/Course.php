@@ -25,4 +25,8 @@ class Course extends Model
     public function items(): HasMany{
         return $this->hasMany(CourseItem::class, 'courseId');
     }
+
+    public function rates(): HasMany{
+        return $this->hasMany(Rate::class, 'courseId');
+    }
 }
