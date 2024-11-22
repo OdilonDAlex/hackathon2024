@@ -77,4 +77,8 @@ class User extends Authenticatable
     public function quizzes(): BelongsToMany {
         return $this->belongsToMany(Quiz::class, 'quiz_user', 'userId', 'quizId');
     }
+
+    public function shares(): HasMany{
+        return $this->hasMany(Share::class, 'authorId');
+    }
 }
