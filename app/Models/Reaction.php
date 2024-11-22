@@ -12,7 +12,10 @@ class Reaction extends Model
     use HasFactory;
 
     protected $fillable = [
-        'type'
+        'type',
+        'authorId',
+        'commentId',
+        'subjectId'
     ];
 
     public function author(): BelongsTo {

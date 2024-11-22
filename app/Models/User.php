@@ -64,4 +64,8 @@ class User extends Authenticatable
     public function reactions(): HasMany{
         return $this->hasMany(Reaction::class, 'authorId');
     }
+
+    public function courses(): HasMany {
+        return $this->hasMany(Course::class, 'authorId');
+    }
 }
