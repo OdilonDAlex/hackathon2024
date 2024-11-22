@@ -1,3 +1,57 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+    --primary: #4cafdc ;
+    --secondary: #dddbdb;
+    --tertiary: #c7c7c7;
+    --quaternary: #ffffff;
+    --dark: #202020;
+    --b-radius: 3px;
+    --font-family: Poppins, 'sans serif';
+    --shadow: #d7d7d7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+label, .txt-small {
+    font-size: small;
+}
+
+.txt-small {
+    margin-top: 10px;
+}
+
+/* input */
+.input-item {
+    width: 100%;
+    height: 35px;
+    background-color: var(--shadow);
+    border-radius: var(--b-radius);
+    margin: 5px 0px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+/* btn */
+.btn-primary {
+    color: var(--quaternary);
+    background-color: var(--primary);
+    border: .5px solid var(--primary);
+    border-radius: var(--b-radius);
+    outline: none;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btn-bordered {
+    border-radius: var(--b-radius);
+    border: .5px solid var(--dark);
+    padding: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
