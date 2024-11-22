@@ -24,5 +24,9 @@ class Subject extends Model
     public function comments(): HasMany {
         return $this->hasMany(Comment::class, 'subjectId');
     }
+
+    public function reactions(): HasMany{
+        return $this->hasMany(Reaction::class, 'subjectId');
+    }
 }
 

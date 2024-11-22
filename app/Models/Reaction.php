@@ -5,22 +5,25 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Comment extends Model
+class Reaction extends Model
 {
-    /** @use HasFactory<\Database\Factories\CommentFactory> */
+    /** @use HasFactory<\Database\Factories\ReactionFactory> */
     use HasFactory;
 
-    public function author(): BelongsTo{
+    protected $fillable = [
+        'type'
+    ];
+
+    public function author(): BelongsTo {
         return $this->belongsTo(User::class, 'authorId');
     }
 
-    public function subjects(): BelongsTo{
+    public function subject(): BelongsTo{
         return $this->belongsTo(Subject::class, 'subjectId');
     }
 
-    public function reactions(): HasMany {
-        return $this->hasMany(Reaction::class, 'commentId');
+    public function comment(): BelongsTo{
+        return $this->belongsTo(Comment::class, 'commentId');
     }
 }
