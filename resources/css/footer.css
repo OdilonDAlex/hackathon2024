@@ -1,0 +1,33 @@
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0000bb;
+    padding: 70px 50px;
+}
+
+footer .container-about {
+    width: 30%;
+    text-align: justify;
+}
+
+footer div.footer-links .container-link-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .link-footer-item {
+    color: var(--primary);
+}
+
+footer div.container-social-media .social-media-list {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div.container-social-media .social-media-list img {
+    width: 20px;
+} 

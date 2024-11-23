@@ -17,6 +17,7 @@ div.container section.container-form h1 {
     text-align: center;
     color: var(--primary);
     margin-bottom: 10px;
+    font-size: 30px;
 }
 
 div.container section.container-form form {

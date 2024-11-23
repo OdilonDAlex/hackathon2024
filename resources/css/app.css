@@ -1,12 +1,21 @@
 :root {
     --primary: #4cafdc ;
     --secondary: #dddbdb;
-    --tertiary: #c7c7c7;
+    --tertiary: #e3e3e3;
     --quaternary: #ffffff;
     --dark: #202020;
-    --b-radius: 3px;
+    --b-radius: 6px;
     --font-family: Poppins, 'sans serif';
     --shadow: #d7d7d7;
+    --text-primary: #3f404dd5;
+    --bg-primary: #ffffff;
+    --bg-secondary: #47e2d0;
+    --bg-tertiary: #47bde2;
+    --bg-fourth: #f0f0f06e;
+    --btn-primary: #50577a;
+    --btn-secondary: #41475e;
+    --btn-tertiary: #ffffff;
+    --box-shadow: #2a2b3634;
 }
 
 * {

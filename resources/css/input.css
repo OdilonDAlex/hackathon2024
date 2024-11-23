@@ -1,0 +1,39 @@
+div.input-container {
+    width: 80%;
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: small;
+    color: var(--text-primary);
+}
+
+
+input {
+    background-color: var(--bg-fourth);
+    padding: 8px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    padding: 8px;
+    color: var(--bg-primary);
+    background-color: var(--btn-primary);
+    border: 1px solid var(--bg-primary);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+textarea {
+    border: .5px solid var(--bg-fifth);
+    padding-left: 5px;
+    outline: none;
+}
+input, textarea {
+    border: 1px solid #7775!important;
+    background-color: var(--bg-fourth);
+}
