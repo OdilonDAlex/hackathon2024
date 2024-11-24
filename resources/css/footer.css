@@ -1,9 +1,10 @@
 footer {
-    width: 100vw;
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #0000bb;
+    background-color: rgb(198, 198, 198);
     padding: 70px 50px;
 }
 
@@ -31,3 +32,8 @@ footer div.container-social-media .social-media-list {
 footer div.container-social-media .social-media-list img {
     width: 20px;
 } 
+
+footer .social-media-list span svg {
+    width: 25px;
+    height: 25px;
+}

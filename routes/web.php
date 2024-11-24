@@ -32,4 +32,8 @@ Route::prefix('course/')->name('course.')->group(function (): void{
 
 });
 
+Route::middleware('auth')->get('mentoring', function(){
+    return view('mentoring');
+})->name('mentoring');
+
 require __DIR__ . '/auth.php';

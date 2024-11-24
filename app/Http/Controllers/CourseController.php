@@ -46,7 +46,10 @@ class CourseController extends Controller
                 $selectedCourse = $unpublishedCourses[0] ?? null;
             }
             
-            $selectedCourseItems = $selectedCourse->items()->get() ?? null;
+            $selectedCourseItems = null;
+            if( isset($selectedCourse) &&  $selectedCourse->items() != null){
+                $selectedCourseItems = $selectedCourse->items()->get();
+            }
         }
         catch(Exception $e){
             $selectedCourseItems = null;

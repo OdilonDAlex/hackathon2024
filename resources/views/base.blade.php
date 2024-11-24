@@ -14,9 +14,11 @@
 
     <section class="content">
         @yield('content')
+        
     </section>
-
+    
     @include('footer')
+    
 
 </body>
 </html>

@@ -6,7 +6,7 @@
         }
         catch(Exception $e){ $selectedCourseId = null; }
     @endphp
-    <h3 class="aside-title">Mes cours</h3>
+    <h3 class="aside-title" style="background-color: #50577a;">Mes cours</h3>
     <section class="unpublished-survey">
         <h4>Non publié</h4>
         @forelse($unpublishedCourses as $course)

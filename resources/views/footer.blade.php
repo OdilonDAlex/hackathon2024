@@ -1,7 +1,10 @@
 <footer>
         <div class="container-about">
             <h2>A propos</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis molestiae totam commodi magni repudiandae, quae dolorum cum harum velit. Porro nemo impedit natus veritatis nobis quisquam voluptatem omnis, placeat libero.</p>
+            <p>Flekseo est une solution numérique dédiée à l'éducation sexuelle, visant à informer et automatoser les jeunes.
+                En brisant les taboux et en réduisant les grossesses précoces et non  désirées, nous contribuons à lutter contre la pauvrété et à bâtir un avenir plus prospère et équitable.
+                Parce que l'accès à une éducation sexuelle fiable est un droit pour tous.
+            </p>
         </div>
 
         <div class="footer-links">
@@ -15,24 +18,24 @@
 
         <div class="container-social-media">
             <div class="social-media-list">
-                <a href="">
+                <span>
                     @include('svg.facebook')
-                </a>
-                <a href="">
+                </span>
+                <span>
                     @include('svg.instagram-square')
-                </a>
-                <a href="">
+                </span>
+                <span>
                     @include('svg.whatsapp')
-                </a>
-                <a href="">
+                </span>
+                <span>
                     @include('svg.linkedin')
-                </a>
-                <a href="">
+                </span>
+                <span>
                     @include('svg.twitter')
-                </a>
+                </span>
             </div>
             <p class="our-email">
-                educa@gmail.com
+                flekseo@gmail.com
             </p>
         </div>
     </footer>

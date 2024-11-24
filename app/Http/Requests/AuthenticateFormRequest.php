@@ -28,7 +28,7 @@ class AuthenticateFormRequest extends FormRequest
             ],
 
             'password' => [
-                'required', 'min:8', Password::default(),
+                'required', 'min:4',
             ]
         ];
     }

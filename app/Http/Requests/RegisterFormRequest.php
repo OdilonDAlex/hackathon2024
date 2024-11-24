@@ -36,11 +36,11 @@ class RegisterFormRequest extends FormRequest
             ],
 
             'password' => [
-                'required', 'min:8', Password::default()
+                'required', 'min:4',
             ],
 
             'confirm_password' => [
-                'required', 'min:8', Password::default()
+                'required', 'min:4',
             ]
         ];
     }

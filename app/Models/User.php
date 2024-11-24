@@ -81,4 +81,5 @@ class User extends Authenticatable
     public function shares(): HasMany{
         return $this->hasMany(Share::class, 'authorId');
     }
+
 }
